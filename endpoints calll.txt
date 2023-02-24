@@ -1,0 +1,1 @@
+We can't make http post, put and delete request from our own browser

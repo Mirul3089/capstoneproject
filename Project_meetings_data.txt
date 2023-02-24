@@ -1,0 +1,3 @@
+Capstone project details
+external meetings
+1)documentation of installation of fastapi

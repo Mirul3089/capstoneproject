@@ -1,0 +1,16 @@
+CREATE OR REPLACE PROCEDURE fast_test123
+    (
+     x NUMBER,
+     LABEL IN sp.label%TYPE
+    )
+    IS
+    BEGIN
+    FOR a in 1..x
+       LOOP
+       INSERT INTO sp("LABEL") values(LABEL ||':'||CURRENT_TIMESTAMP);
+       COMMIT;
+       END LOOP;
+    END;
+    
+    
+ EXEC fast_test123(20,'mirul123');
